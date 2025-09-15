@@ -8,6 +8,14 @@ from sumy.parsers.plaintext import PlaintextParser
 from sumy.nlp.tokenizers import Tokenizer
 from sumy.summarizers.text_rank import TextRankSummarizer
 import os
+import os
+
+# ------------------- NLTK FIX -------------------
+import nltk
+# Download required NLTK tokenizers at runtime
+nltk.download("punkt", quiet=True)
+nltk.download("punkt_tab", quiet=True)
+# -------------------------------------------------
 
 HISTORY_FILE = "summary_history.json"
 
@@ -245,3 +253,4 @@ if history:
 if show_original:
     st.subheader("Original text")
     st.write(text_input)
+
