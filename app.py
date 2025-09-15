@@ -90,7 +90,7 @@ st.set_page_config(page_title="ChatSummarizer", layout="centered")
 # Top UI section with instructions
 st.markdown("""
     <div style='background-color:#f0f4f8;padding:20px;border-radius:10px'>
-        <h2 style='color:#4A90E2'>💬 ChatSummarizer</h2>
+        <h2 style='color:#4A90E2'>💬 ChatSummarizer</h2><br>
         <div style='text-align:right; font-weight:bold; color:#333; margin-top:-30px;'>
             Developed by Olamide
         </div>
@@ -253,5 +253,6 @@ if history:
 if show_original:
     st.subheader("Original text")
     st.write(text_input)
+
 
 
