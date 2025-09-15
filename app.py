@@ -97,7 +97,7 @@ st.markdown("""
         <p>Quickly summarize your WhatsApp chats or any long text offline.</p>
         <b>How to use:</b>
         <ol>
-            <li>Paste your text in the box below.</li>
+            <li>Paste your text in the box below, and click on paste text above to summarize.</li>
             <li>Adjust the number of sentences for the summary.</li>
             <li>Click <b>Summarize</b> to get your summary.</li>
             <li>View, copy, or download your summary and report.</li>
@@ -254,6 +254,7 @@ if history:
 if show_original:
     st.subheader("Original text")
     st.write(text_input)
+
 
 
 
